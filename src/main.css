@@ -26,6 +26,8 @@
 
 @theme {
   --color-accent: hsl(283.6deg 80.1% 60.59%);
+  --color-primary: hsl(283.6deg 64.96% 55.48%);
+  --color-primary-hover: hsl(284, 51%, 48%);
   --color-dark-700: hsl(0, 0%, 20%);
   --color-dark-750: hsl(0, 0%, 17%);
   --color-dark-800: hsl(0, 0%, 12%);
@@ -51,6 +53,10 @@
 @layer components {
   .btn {
     @apply bg-dark-700 hover:bg-dark-750 block w-full rounded-md px-4 py-3 text-sm font-semibold text-white/80 shadow-md/10 transition-colors duration-150 ease-out;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-hover block w-full rounded-md px-4 py-3 text-sm font-semibold text-white shadow-md/10 transition-colors duration-150 ease-out;
   }
 
   .link {
